@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<form action="details" method='post'>
+
+    {% csrf_token %}
+
+    Team Name : <input type="text" name="class"><br>
+    Password : <input type="password" name="section"><font color="red">{{result}}</font><br>
+
+    <input type="submit" value="login">
+
+</form>
+{% endblock %}
